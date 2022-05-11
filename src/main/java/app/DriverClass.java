@@ -4,7 +4,7 @@ import java.io.*;
 
 public class DriverClass {
     public static void main(String[] args) throws IOException {
-        System.out.println("Starting application");
+        //System.out.println("Starting application");
         String filePath = args[0];
         BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(filePath)));
         String command = null;
@@ -12,6 +12,6 @@ public class DriverClass {
             if(command.equalsIgnoreCase("exit")) break;
             System.out.println(VehicleRentalCommandHandlerFacade.getInstance().getHandler(command).handle(command));
         }
-        System.out.println("exiting application");
+        //System.out.println("exiting application");
     }
 }
