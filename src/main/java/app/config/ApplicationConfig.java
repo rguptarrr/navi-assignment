@@ -2,7 +2,7 @@ package app.config;
 
 public class ApplicationConfig {
     private static boolean dynamicPricingEnabled = false;
-    private static double dynamicPricingThreshold = 0.5;
+    private static double dynamicPricingThreshold = 0.8;
     private static double dynamicPricingMultiplier = 1.1;
 
     public static double getDynamicPricingMultiplier() {
